@@ -22,6 +22,11 @@
                             <li class="dropdown-item">
                                 {!! link_to_route('users.show', 'My profile', ['user' => Auth::id()]) !!}
                             </li>
+   
+                            <li class="dropdown-item">
+                                {!! link_to_route('users.favorites', 'Favorite', ['id' => Auth::id()]) !!}
+                            </li>                            
+                            
                             <li class="dropdown-divider"></li>
                             {{-- ログアウトへのリンク --}}
                             <li class="dropdown-item">{!! link_to_route('logout.get', 'Logout') !!}</li>
